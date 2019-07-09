@@ -546,3 +546,20 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+@media only screen and (orientation: portrait) and (max-device-width: 767px) { 
+  body {
+    height: calc(100vh - 50px);
+    width: 100vh;
+    overflow: scroll;
+    
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+
+    margin-top: 50px;
+    margin-left: -25px;
+  }
+}
